@@ -1,0 +1,5 @@
+{{!-- <h2>{{list.title action "toggleHidden"}}</h2> --}}
+<h2 {{action "toggleHidden"}}>{{list.title}}</h2>
+{{#each list.items as |item|}}
+{{listr-list/listr-list-item item=item}}
+{{/each}}
